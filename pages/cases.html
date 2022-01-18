@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Covid 19 Cases - named covida">
+    <meta name="author" content="Owolabi Oyekanmi">
+    <title>Welcome to Covida</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="../assets/cover.css" rel="stylesheet">
+    <link href="../assets/animation.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner2">
+          <div class="cover-container">
+            <div class="masthead clearfix">
+              <div class="inner">
+                <nav class="navbar navbar-inverse navbar-padding-right black-bg">
+                    <h3 class="masthead-brand" style="z-index: 100 !important;">
+                      <img src="../img/logoo.png" width="40%">
+                    </h3>
+                    <form class="navbar-form navbar-right">
+                      <input type="text" class="form-control" placeholder="Search cases...">
+                    </form>
+                    <div class="case-notify">
+                      <div class="panel panel-default notify-body">
+                        <div class="panel-heading notify-head">
+                          <h3 class="panel-title">
+                            Positive Cases
+                          </h3>
+                        </div>
+                        <div class="panel-body">
+                          Daily: 1,524
+                          <hr style="border-bottom: 1px solid #fff !important">
+                          Total: 500,242
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="nav masthead-nav">
+                      <li><a href="../index.html">home</a></li>
+                      <li class="active"><a href="cases.html">cases</a></li>
+                      <li><a href="analysis.html">analysis</a></li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="well well-bg">
+        <div class="container padleft">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#" onclick="toggle('hide1'); return false;"> Map Information </a></li>
+            <li role="presentation"><a href="#" onclick="toggle('hide2'); return false;"> Tabular Information </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hide1">
+        <iframe src="https://opendata.bristol.gov.uk/explore/embed/dataset/covid-19-cases/map/?disjunctive.area_name&sort=specimen_date&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJsaW5lIiwiZnVuYyI6IlNVTSIsInlBeGlzIjoiY3VtdWxhdGl2ZV9sYWJfY29uZmlybWVkX2Nhc2VzX3JhdGUiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1EYXJrMiJ9XSwieEF4aXMiOiJzcGVjaW1lbl9kYXRlIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiZGF5Iiwic29ydCI6IiIsInNlcmllc0JyZWFrZG93biI6ImFyZWFfbmFtZSIsImNvbmZpZyI6eyJkYXRhc2V0IjoiY292aWQtMTktY2FzZXMiLCJvcHRpb25zIjp7ImRpc2p1bmN0aXZlLmFyZWFfbmFtZSI6dHJ1ZSwic29ydCI6InNwZWNpbWVuX2RhdGUiLCJsb2NhdGlvbiI6IjksNTEuNDc4MjEsLTIuNjg0OTYiLCJiYXNlbWFwIjoiamF3Zy5zdHJlZXRzIn19fV0sImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&location=9,51.47821,-2.68496&basemap=jawg.streets&static=false&datasetcard=false&scrollWheelZoom=true" width="100%" height="480" frameborder="0"></iframe>    
+        <br><br>
+      </div>
+      <div class="hide2">
+        <iframe src="https://opendata.bristol.gov.uk/explore/embed/dataset/covid-19-cases/table/?disjunctive.area_name&sort=specimen_date&location=9,51.47821,-2.68496&basemap=jawg.streets&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJsaW5lIiwiZnVuYyI6IlNVTSIsInlBeGlzIjoiY3VtdWxhdGl2ZV9sYWJfY29uZmlybWVkX2Nhc2VzX3JhdGUiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1EYXJrMiJ9XSwieEF4aXMiOiJzcGVjaW1lbl9kYXRlIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiZGF5Iiwic29ydCI6IiIsInNlcmllc0JyZWFrZG93biI6ImFyZWFfbmFtZSIsImNvbmZpZyI6eyJkYXRhc2V0IjoiY292aWQtMTktY2FzZXMiLCJvcHRpb25zIjp7ImRpc2p1bmN0aXZlLmFyZWFfbmFtZSI6dHJ1ZSwic29ydCI6InNwZWNpbWVuX2RhdGUifX19XSwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&static=false&datasetcard=false" width="100%" height="400" frameborder="0"></iframe>  
+      </div>
+
+      <div class="container">
+        <hr>
+        <footer>
+          <p>&copy; 2022 Oyekanmi Owolabi | DDAD</p>
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script>
+        function toggle (id) {
+            if(id == 'hide1') {
+                var x = document.getElementsByClassName("hide1");
+                for (var i = 0; i < x.length; i++) x[i].style.display = "block";
+                var y = document.getElementsByClassName("hide2");
+                for (var i = 0; i < y.length; i++) {
+                    y[i].style.display = "none";
+                }
+            } else {
+                var y = document.getElementsByClassName("hide2");
+                for (var i = 0; i < y.length; i++) { 
+                    y[i].style.visibility = "visible"; 
+                    y[i].style.display = "block";
+                }
+                var x = document.getElementsByClassName("hide1");
+                for (var i = 0; i < x.length; i++) x[i].style.display = "none";
+            }
+        }
+    </script>
+  </body>
+</html>
