@@ -131,8 +131,11 @@ body {
   font-size: 50px;
 }
 
-.danger-color {
+.covid-number {
   color: #CB444F;
+  font-size: 30px !important;
+  margin-top: 10px !important;
+  font-weight: bold !important;
 }
 
 .info-color {
@@ -271,3 +274,8 @@ body {
 } */
 
 .img-thumbnail { height: 200px !important; }
+
+.left-pad {
+  text-align: left !important;
+  padding: 15px !important;
+}
